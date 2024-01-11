@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(#000000 50%, #ffb92a 50%);
+}
+.container {
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37em;
+  padding: 3em 1.8em;
+  background-color: #201f28;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(red, green, blue, alpha);
+}
+.container:hover {
+  /* Add a light white shadow on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 0.5em;
+}
+.search-container input,
+.search-container button {
+  font-size: 0.9em;
+  outline: none;
+  border-radius: 0.3em;
+}
+
+.search-container input {
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  padding: 0.7em;
+  color: azure;
+}
+.search-container input:focus {
+  border-color: #ffff;
+}
+.search-container button {
+  background-color: #ffb92a;
+  cursor: pointer;
+  width: 120px;
+  white-space: normal;
+}
+.search-container button:hover {
+  background-color: #d24804;
+  color: white;
+}
+#result {
+  color: white;
+}
+.info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  margin-top: 1.2em;
+  align-items: center;
+  margin-top: 1.2em;
+}
+h2 {
+  text-align: center;
+  margin-top: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+.poster {
+  width: 100%;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+  margin: 0.6em 0 0.9em 0;
+}
+.rating img {
+  width: 1.2em;
+}
+.rating h4 {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+.msg {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #d24804;
+}
+.details {
+  font-size: 0.95em;
+  display: flex;
+  padding-left: 15px;
+  justify-content: center;
+  gap: 1em;
+  color: #a0a0a0;
+  margin: 0.6em 0;
+  font-weight: 300;
+}
+.genre {
+  display: flex;
+  justify-content: space-around;
+}
+
+.genre div {
+  border: 1px solid #a0a0a0;
+  padding: 2px 4px;
+  background-color: #f5ac1c;
+  color: white;
+  border-radius: 0.4em;
+  font-weight: 300;
+  font-size: 16px;
+}
+h3 {
+  font-weight: 500;
+  margin-top: 1.2em;
+}
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.7em;
+  text-align: justify;
+  color: #a0a0a0;
+}
+.info .poster {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
